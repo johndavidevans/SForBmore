@@ -16,10 +16,19 @@ body,
   margin: 0;
   padding: 0;
 }
-.container {
-  display: grid;
-  grid-template-rows: 2rem auto;
+
+.cont {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+#quiet-text{
+  color:#6c757d;
+  font-size: 12;
+}
+
 #map {
   height: 100%;
   width: 100%;

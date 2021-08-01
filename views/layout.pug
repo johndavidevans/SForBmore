@@ -2,14 +2,24 @@ doctype html
 html
 head
     link(rel='favicon', sizes='64x64', href='favicon.ico')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+    link(rel="canonical", href="https://getbootstrap.com/docs/4.3/examples/album/")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 
 block head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+
 body
-    #main.container
-        #header
-            p To learn more about this project:
-            a(href="https://github.com/johndavidevans/SForBmore") Baltimore's Historic Streetcar Routes
+    .navbar.navbar-dark.bg-dark.shadow-smx 
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                strong Is this San Francisco? Baltimore's Historic Streetcar Routes
+                .col-sm-8.col-md-7.py-4
+                #quiet-text
+                    p To learn more about this project:
+                        a(href="https://github.com/johndavidevans/SForBmore") Baltimore's Historic Streetcar Routes
+    .cont
         block content
+    
